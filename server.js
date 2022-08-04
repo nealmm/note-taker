@@ -48,7 +48,6 @@ app.delete('/api/notes/:id', (req, res) => {
 
         for (let i = 0; i < notes.length; i++) {
             if (notes[i].id === req.params.id) {
-                console.log('deleting note')
                 notes.splice(i, 1)
                 break
             }
